@@ -116,7 +116,7 @@ struct HandleBar: View {
 }
 
 struct TitleBar: View {
-    var buttonSize: CGFloat = 25
+    var buttonSize: CGFloat = 20
     @Binding var isShow: Bool
     
     var body: some View {
