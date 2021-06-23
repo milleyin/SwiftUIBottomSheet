@@ -3,6 +3,8 @@
 + 純SwiftUI
 + 底部兩段式sheet
 
+![](https://upload.cc/i1/2021/06/23/erSPHf.gif)
+
 ✅完成功能
 
 + 表單list 
