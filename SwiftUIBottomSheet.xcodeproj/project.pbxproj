@@ -10,9 +10,9 @@
 		E46A08962681C59F009DA4CC /* SwiftUIBottomSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A08952681C59F009DA4CC /* SwiftUIBottomSheetApp.swift */; };
 		E46A08982681C59F009DA4CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A08972681C59F009DA4CC /* ContentView.swift */; };
 		E46A089D2681C5A5009DA4CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46A089C2681C5A5009DA4CC /* Preview Assets.xcassets */; };
-		E46A08A72681C5F6009DA4CC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A08A62681C5F6009DA4CC /* Restaurant.swift */; };
 		E46A08AA2681C821009DA4CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46A08A92681C821009DA4CC /* DetailView.swift */; };
 		E46BE8B62682A8D200446D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46BE8B52682A8D200446D12 /* Assets.xcassets */; };
+		E46BE8BA2682EA5100446D12 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BE8B92682EA5100446D12 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		E46A08972681C59F009DA4CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E46A089C2681C5A5009DA4CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E46A089E2681C5A5009DA4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E46A08A62681C5F6009DA4CC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		E46A08A92681C821009DA4CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E46BE8B52682A8D200446D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E46BE8B92682EA5100446D12 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 				E46A08A82681C602009DA4CC /* Model */,
 				E46A08952681C59F009DA4CC /* SwiftUIBottomSheetApp.swift */,
 				E46A08972681C59F009DA4CC /* ContentView.swift */,
-				E46BE8B52682A8D200446D12 /* Assets.xcassets */,
 				E46A08A92681C821009DA4CC /* DetailView.swift */,
+				E46BE8B52682A8D200446D12 /* Assets.xcassets */,
 				E46A089E2681C5A5009DA4CC /* Info.plist */,
 				E46A089B2681C5A5009DA4CC /* Preview Content */,
 			);
@@ -78,7 +78,7 @@
 		E46A08A82681C602009DA4CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E46A08A62681C5F6009DA4CC /* Restaurant.swift */,
+				E46BE8B92682EA5100446D12 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 			files = (
 				E46A08AA2681C821009DA4CC /* DetailView.swift in Sources */,
 				E46A08982681C59F009DA4CC /* ContentView.swift in Sources */,
-				E46A08A72681C5F6009DA4CC /* Restaurant.swift in Sources */,
 				E46A08962681C59F009DA4CC /* SwiftUIBottomSheetApp.swift in Sources */,
+				E46BE8BA2682EA5100446D12 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

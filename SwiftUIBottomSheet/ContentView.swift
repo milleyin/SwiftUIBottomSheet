@@ -10,28 +10,46 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var showDetail = false
-    @State private var selectedItem: Restaurant?
+    @State private var selectedItem: Book?
     
     var body: some View {
         ZStack {//彈出view要處於上方，所以要加個zstack
             NavigationView {
-                List(restaurants) { (restaurant) in
+                List(books) { (book) in
                     HStack {
-                        Image(restaurant.image)
+                        Image(book.image)
                             .resizable()
-                            .frame(width: 60, height: 60)
-                            .cornerRadius(10)
-                        Text(restaurant.name)
+                            .frame(width: 60, height: 80)
+                            //.cornerRadius(10)
+                        VStack(alignment: .leading, spacing: 6.0) {
+                            Text(book.name)
+                                .bold()
+                            Text(book.author)
+                                .font(.system(.subheadline))
+                                .foregroundColor(.secondary)
+                            Text("¥ \(book.price)")
+                                .background(
+                                    Rectangle()
+                                        .foregroundColor(.orange)
+                                        .frame(width: 80)
+                                )
+                                .frame(width: 100, alignment: .leading)
+                                .padding(.leading, 8)
+                                .cornerRadius(2)
+                                .foregroundColor(.white)
+                            
+                        }.padding(.leading, 8)
                         Spacer()
                     }
+                    .padding(.bottom, 5)
                     .contentShape(Rectangle())
                     //解決list空白處無法點擊問題
                     .onTapGesture {
                         self.showDetail = true
-                        self.selectedItem = restaurant
+                        self.selectedItem = book
                     }
                 }
-                .navigationBarTitle("Restaurant List")
+                .navigationBarTitle("Library")
                 .offset(y: showDetail ? -100 : 0)
                 .animation(.easeOut(duration: 0.2))
             }
@@ -45,18 +63,12 @@ struct ContentView: View {
                     }
                 //設置當空視圖被點擊時，關閉RestaurantDetailView(設置showDetail為false)
                 selectedItem.map({
-                    DetailView(isShow: $showDetail, restaurant: $0)
+                    DetailView(isShow: $showDetail, book: $0)
                         //調用被點擊的row
                         .transition(.move(edge: .bottom))
                         .animation(.easeInOut(duration: 0.5))
                     //從底部上來
                 })
-                //如果不使用.map方式
-//                if selectedRestaurant != nil {
-//                    RestaurantDetailView(isShow: $showDetail, restaurant: selectedRestaurant!)
-//                        .transition(.move(edge: .bottom))
-//                        .animation(.easeInOut)
-//                }//這種寫法和上面.map的寫法，等效
             }
         }
     }
@@ -68,19 +80,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct BasicImageRow: View {
-    var restaurant: Restaurant
-    
-    var body: some View {
-        HStack {
-            Image(restaurant.image)
-                .resizable()
-                .frame(width: 40, height: 40)
-                .cornerRadius(5)
-            Text(restaurant.name)
-        }
-    }
-}
+
 
 struct BlankView: View {  //建立一個空視圖，用作彈出層時的背景
     var bgColor: Color
