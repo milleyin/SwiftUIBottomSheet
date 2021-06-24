@@ -3,7 +3,7 @@
 + 純SwiftUI
 + 底部兩段式sheet
 
-![](https://f.mille.in/store/iOSbuttonSheet_refullSize.gif)
+![](https://f.mille.in/store/iOSbuttonSheetResize.gif)
 
 ✅完成功能
 
