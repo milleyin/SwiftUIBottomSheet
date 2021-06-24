@@ -3,7 +3,7 @@
 + 純SwiftUI
 + 底部兩段式sheet
 
-![](https://f.mille.in/store/iOSbuttonSheetResize.gif = 111x240)
+![](https://f.mille.in/store/iOSbuttonSheetResize.gif = 111*240)
 
 ✅完成功能
 
