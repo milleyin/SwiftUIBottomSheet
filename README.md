@@ -3,8 +3,8 @@
 + 純SwiftUI
 + 底部兩段式sheet
 
-[//]: ![](https://f.mille.in/store/iOSbuttonSheetResize.gif){:height="50%" width="50%"}
-<img src="https://f.mille.in/store/iOSbuttonSheetResize.gif" width = "111" height = "240"/>
+;![](https://f.mille.in/store/iOSbuttonSheetResize.gif){:height="50%" width="50%"}
+<img src="https://f.mille.in/store/iOSbuttonSheetResize.gif" width = "222" height = "480"/>
 
 ✅完成功能
 
