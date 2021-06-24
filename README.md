@@ -3,7 +3,6 @@
 + 純SwiftUI
 + 底部兩段式sheet
 
-;![](https://f.mille.in/store/iOSbuttonSheetResize.gif){:height="50%" width="50%"}
 <img src="https://f.mille.in/store/iOSbuttonSheetResize.gif" width = "222" height = "480"/>
 
 ✅完成功能
@@ -11,6 +10,7 @@
 + 表單list 
 + 細節視圖
 + 兩段式底部彈出sheet
++ 明暗主題模式適配
 
 ◻️功能計畫
 - 表單左右滑功能
